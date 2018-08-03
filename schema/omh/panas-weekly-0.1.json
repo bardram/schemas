@@ -1,0 +1,500 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+
+    "description": "This schema models the Positive and Negative Affect Schedule (PANAS) questionnaire.",
+    "type": "object",
+
+    "references": [
+        {
+            "description": "The Positive and Negative Affect Schedule (PANAS) questionnaire",
+            "url": "https://booksite.elsevier.com/9780123745170/Chapter%203/Chapter_3_Worksheet_3.1.pdf"
+        },
+        {
+            "description": "The SNOMED code represents Positive and negative affect schedule (assessment scale)",
+            "url": "http://purl.bioontology.org/ontology/SNOMEDCT/304755000"
+        }
+    ],
+
+    "definitions": {
+        "survey": {
+            "$ref": "survey-0.x.json"
+        },
+        "survey_item": {
+            "$ref": "survey-item-0.x.json"
+        },
+        "survey_categorical_answer": {
+            "$ref": "survey-categorical-answer-0.x.json"
+        },
+        "survey_categorical_answer_item": {
+            "description": "A survey item that has one categorical answer.",
+            "allOf": [
+                {
+                    "$ref": "#/definitions/survey_item"
+                },
+                {
+                    "type": "object",
+                    "properties": {
+                        "answers": {
+                            "type": "array",
+                            "items": {
+                                "$ref": "#/definitions/survey_categorical_answer"
+                            },
+                            "maxItems": 1
+                        }
+                    }
+                }
+            ]
+        },
+        "intensity_scale_item": {
+            "description": "A categorical answer item where the answer is one of the five intensity categories from PANAS.",
+            "allOf": [
+                {
+                    "$ref": "#/definitions/survey_categorical_answer_item"
+                },
+                {
+                    "type": "object",
+                    "properties": {
+                        "answers": {
+                            "items": {
+                                "enum": [
+                                    {
+                                        "code": 1,
+                                        "value": "Very Slightly or Not at All"
+                                    },
+                                    {
+                                        "code": 2,
+                                        "value": "A Little"
+                                    },
+                                    {
+                                        "code": 3,
+                                        "value": "Moderately"
+                                    },
+                                    {
+                                        "code": 4,
+                                        "value": "Quite a Bit"
+                                    },
+                                    {
+                                        "code": 5,
+                                        "value": "Extremely"
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                }
+            ]
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "#/definitions/survey"
+        },
+        {
+            "properties": {
+                "items": {
+                    "type": "array",
+                    "minItems": 20,
+                    "items": [
+                        {
+                            "allOf": [
+                                {
+                                    "$ref": "#/definitions/intensity_scale_item"
+                                },
+                                {
+                                    "properties": {
+                                        "question": {
+                                            "enum": [
+                                                {
+                                                    "label": "1",
+                                                    "text": "Indicate to what extent in the last week you have felt Interested"
+                                                }
+                                            ]
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "allOf": [
+                                {
+                                    "$ref": "#/definitions/intensity_scale_item"
+                                },
+                                {
+                                    "properties": {
+                                        "question": {
+                                            "enum": [
+                                                {
+                                                    "label": "2",
+                                                    "text": "Indicate to what extent in the last week you have felt Distressed"
+                                                }
+                                            ]
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "allOf": [
+                                {
+                                    "$ref": "#/definitions/intensity_scale_item"
+                                },
+                                {
+                                    "properties": {
+                                        "question": {
+                                            "enum": [
+                                                {
+                                                    "label": "3",
+                                                    "text": "Indicate to what extent in the last week you have felt Excited"
+                                                }
+                                            ]
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "allOf": [
+                                {
+                                    "$ref": "#/definitions/intensity_scale_item"
+                                },
+                                {
+                                    "properties": {
+                                        "question": {
+                                            "enum": [
+                                                {
+                                                    "label": "4",
+                                                    "text": "Indicate to what extent in the last week you have felt Upset"
+                                                }
+                                            ]
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "allOf": [
+                                {
+                                    "$ref": "#/definitions/intensity_scale_item"
+                                },
+                                {
+                                    "properties": {
+                                        "question": {
+                                            "enum": [
+                                                {
+                                                    "label": "5",
+                                                    "text": "Indicate to what extent in the last week you have felt Strong"
+                                                }
+                                            ]
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "allOf": [
+                                {
+                                    "$ref": "#/definitions/intensity_scale_item"
+                                },
+                                {
+                                    "properties": {
+                                        "question": {
+                                            "enum": [
+                                                {
+                                                    "label": "6",
+                                                    "text": "Indicate to what extent in the last week you have felt Guilty"
+                                                }
+                                            ]
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "allOf": [
+                                {
+                                    "$ref": "#/definitions/intensity_scale_item"
+                                },
+                                {
+                                    "properties": {
+                                        "question": {
+                                            "enum": [
+                                                {
+                                                    "label": "7",
+                                                    "text": "Indicate to what extent in the last week you have felt Scared"
+                                                }
+                                            ]
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "allOf": [
+                                {
+                                    "$ref": "#/definitions/intensity_scale_item"
+                                },
+                                {
+                                    "properties": {
+                                        "question": {
+                                            "enum": [
+                                                {
+                                                    "label": "8",
+                                                    "text": "Indicate to what extent in the last week you have felt Hostile"
+                                                }
+                                            ]
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "allOf": [
+                                {
+                                    "$ref": "#/definitions/intensity_scale_item"
+                                },
+                                {
+                                    "properties": {
+                                        "question": {
+                                            "enum": [
+                                                {
+                                                    "label": "9",
+                                                    "text": "Indicate to what extent in the last week you have felt Enthusiastic"
+                                                }
+                                            ]
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "allOf": [
+                                {
+                                    "$ref": "#/definitions/intensity_scale_item"
+                                },
+                                {
+                                    "properties": {
+                                        "question": {
+                                            "enum": [
+                                                {
+                                                    "label": "10",
+                                                    "text": "Indicate to what extent in the last week you have felt Proud"
+                                                }
+                                            ]
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "allOf": [
+                                {
+                                    "$ref": "#/definitions/intensity_scale_item"
+                                },
+                                {
+                                    "properties": {
+                                        "question": {
+                                            "enum": [
+                                                {
+                                                    "label": "11",
+                                                    "text": "Indicate to what extent in the last week you have felt Irritable"
+                                                }
+                                            ]
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "allOf": [
+                                {
+                                    "$ref": "#/definitions/intensity_scale_item"
+                                },
+                                {
+                                    "properties": {
+                                        "question": {
+                                            "enum": [
+                                                {
+                                                    "label": "12",
+                                                    "text": "Indicate to what extent in the last week you have felt Alert"
+                                                }
+                                            ]
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "allOf": [
+                                {
+                                    "$ref": "#/definitions/intensity_scale_item"
+                                },
+                                {
+                                    "properties": {
+                                        "question": {
+                                            "enum": [
+                                                {
+                                                    "label": "13",
+                                                    "text": "Indicate to what extent in the last week you have felt Ashamed"
+                                                }
+                                            ]
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "allOf": [
+                                {
+                                    "$ref": "#/definitions/intensity_scale_item"
+                                },
+                                {
+                                    "properties": {
+                                        "question": {
+                                            "enum": [
+                                                {
+                                                    "label": "14",
+                                                    "text": "Indicate to what extent in the last week you have felt Inspired"
+                                                }
+                                            ]
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "allOf": [
+                                {
+                                    "$ref": "#/definitions/intensity_scale_item"
+                                },
+                                {
+                                    "properties": {
+                                        "question": {
+                                            "enum": [
+                                                {
+                                                    "label": "15",
+                                                    "text": "Indicate to what extent in the last week you have felt Nervous"
+                                                }
+                                            ]
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "allOf": [
+                                {
+                                    "$ref": "#/definitions/intensity_scale_item"
+                                },
+                                {
+                                    "properties": {
+                                        "question": {
+                                            "enum": [
+                                                {
+                                                    "label": "16",
+                                                    "text": "Indicate to what extent in the last week you have felt Determined"
+                                                }
+                                            ]
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "allOf": [
+                                {
+                                    "$ref": "#/definitions/intensity_scale_item"
+                                },
+                                {
+                                    "properties": {
+                                        "question": {
+                                            "enum": [
+                                                {
+                                                    "label": "17",
+                                                    "text": "Indicate to what extent in the last week you have felt Attentive"
+                                                }
+                                            ]
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "allOf": [
+                                {
+                                    "$ref": "#/definitions/intensity_scale_item"
+                                },
+                                {
+                                    "properties": {
+                                        "question": {
+                                            "enum": [
+                                                {
+                                                    "label": "18",
+                                                    "text": "Indicate to what extent in the last week you have felt Jittery"
+                                                }
+                                            ]
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "allOf": [
+                                {
+                                    "$ref": "#/definitions/intensity_scale_item"
+                                },
+                                {
+                                    "properties": {
+                                        "question": {
+                                            "enum": [
+                                                {
+                                                    "label": "19",
+                                                    "text": "Indicate to what extent in the last week you have felt Active"
+                                                }
+                                            ]
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "allOf": [
+                                {
+                                    "$ref": "#/definitions/intensity_scale_item"
+                                },
+                                {
+                                    "properties": {
+                                        "question": {
+                                            "enum": [
+                                                {
+                                                    "label": "20",
+                                                    "text": "Indicate to what extent in the last week you have felt Afraid"
+                                                }
+                                            ]
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    ],
+                    "additionalItems": false
+                },
+                "score": {
+                    "type": "object",
+                    "properties": {
+                        "positive_affect": {
+                            "type": "number"
+                        },
+                        "negative_affect": {
+                            "type": "number"
+                        }
+                    },
+                    "required": [
+                        "positive_affect",
+                        "negative_affect"
+                    ],
+                    "additionalProperties": false
+                }
+            }
+        }
+    ]
+}
