@@ -1,0 +1,289 @@
+{
+    "items": [
+        {
+            "question": {
+                "label": "1",
+                "text": "Indicate to what extent in the last week you have felt Interested"
+            },
+            "answers": [
+                {
+                    "code": 4,
+                    "value": "Quite a Bit"
+                }
+            ],
+            "asked_date_time": "2015-02-05T07:24:00Z",
+            "answered_date_time": "2015-02-05T07:24:05Z"
+        },
+        {
+            "question": {
+                "label": "2",
+                "text": "Indicate to what extent in the last week you have felt Distressed"
+            },
+            "answers": [
+                {
+                    "code": 2,
+                    "value": "A Little"
+                }
+            ],
+            "asked_date_time": "2015-02-05T07:24:10Z",
+            "answered_date_time": "2015-02-05T07:24:15Z"
+        },
+        {
+            "question": {
+                "label": "3",
+                "text": "Indicate to what extent in the last week you have felt Excited"
+            },
+            "answers": [
+                {
+                    "code": 3,
+                    "value": "Moderately"
+                }
+            ],
+            "asked_date_time": "2015-02-05T07:24:20Z",
+            "answered_date_time": "2015-02-05T07:24:25Z"
+        },
+        {
+            "question": {
+                "label": "4",
+                "text": "Indicate to what extent in the last week you have felt Upset"
+            },
+            "answers": [
+                {
+                    "code": 2,
+                    "value": "A Little"
+                }
+            ],
+            "asked_date_time": "2015-02-05T07:24:30Z",
+            "answered_date_time": "2015-02-05T07:24:35Z"
+        },
+        {
+            "question": {
+                "label": "5",
+                "text": "Indicate to what extent in the last week you have felt Strong"
+            },
+            "answers": [
+                {
+                    "code": 5,
+                    "value": "Extremely"
+                }
+            ],
+            "asked_date_time": "2015-02-05T07:24:40Z",
+            "answered_date_time": "2015-02-05T07:24:45Z"
+        },
+        {
+            "question": {
+                "label": "6",
+                "text": "Indicate to what extent in the last week you have felt Guilty"
+            },
+            "answers": [
+                {
+                    "code": 2,
+                    "value": "A Little"
+                }
+            ],
+            "asked_date_time": "2015-02-05T07:24:50Z",
+            "answered_date_time": "2015-02-05T07:24:55Z"
+        },
+        {
+            "question": {
+                "label": "7",
+                "text": "Indicate to what extent in the last week you have felt Scared"
+            },
+            "answers": [
+                {
+                    "code": 2,
+                    "value": "A Little"
+                }
+            ],
+            "asked_date_time": "2015-02-05T07:25:00Z",
+            "answered_date_time": "2015-02-05T07:25:15Z"
+        },
+        {
+            "question": {
+                "label": "8",
+                "text": "Indicate to what extent in the last week you have felt Hostile"
+            },
+            "answers": [
+                {
+                    "code": 2,
+                    "value": "A Little"
+                }
+            ],
+            "asked_date_time": "2015-02-05T07:25:20Z",
+            "answered_date_time": "2015-02-05T07:25:25Z"
+        },
+        {
+            "question": {
+                "label": "9",
+                "text": "Indicate to what extent in the last week you have felt Enthusiastic"
+            },
+            "answers": [
+                {
+                    "code": 3,
+                    "value": "Moderately"
+                }
+            ],
+            "asked_date_time": "2015-02-05T07:25:30Z",
+            "answered_date_time": "2015-02-05T07:25:35Z"
+        },
+        {
+            "question": {
+                "label": "10",
+                "text": "Indicate to what extent in the last week you have felt Proud"
+            },
+            "answers": [
+                {
+                    "code": 4,
+                    "value": "Quite a Bit"
+                }
+            ],
+            "asked_date_time": "2015-02-05T07:25:40Z",
+            "answered_date_time": "2015-02-05T07:25:45Z"
+        },
+        {
+            "question": {
+                "label": "11",
+                "text": "Indicate to what extent in the last week you have felt Irritable"
+            },
+            "answers": [
+                {
+                    "code": 3,
+                    "value": "Moderately"
+                }
+            ],
+            "asked_date_time": "2015-02-05T07:25:50Z",
+            "answered_date_time": "2015-02-05T07:25:55Z"
+        },
+        {
+            "question": {
+                "label": "12",
+                "text": "Indicate to what extent in the last week you have felt Alert"
+            },
+            "answers": [
+                {
+                    "code": 4,
+                    "value": "Quite a Bit"
+                }
+            ],
+            "asked_date_time": "2015-02-05T07:26:00Z",
+            "answered_date_time": "2015-02-05T07:26:05Z"
+        },
+        {
+            "question": {
+                "label": "13",
+                "text": "Indicate to what extent in the last week you have felt Ashamed"
+            },
+            "answers": [
+                {
+                    "code": 2,
+                    "value": "A Little"
+                }
+            ],
+            "asked_date_time": "2015-02-05T07:26:10Z",
+            "answered_date_time": "2015-02-05T07:26:15Z"
+        },
+        {
+            "question": {
+                "label": "14",
+                "text": "Indicate to what extent in the last week you have felt Inspired"
+            },
+            "answers": [
+                {
+                    "code": 4,
+                    "value": "Quite a Bit"
+                }
+            ],
+            "asked_date_time": "2015-02-05T07:26:20Z",
+            "answered_date_time": "2015-02-05T07:26:25Z"
+        },
+        {
+            "question": {
+                "label": "15",
+                "text": "Indicate to what extent in the last week you have felt Nervous"
+            },
+            "answers": [
+                {
+                    "code": 4,
+                    "value": "Quite a Bit"
+                }
+            ],
+            "asked_date_time": "2015-02-05T07:26:30Z",
+            "answered_date_time": "2015-02-05T07:26:35Z"
+        },
+        {
+            "question": {
+                "label": "16",
+                "text": "Indicate to what extent in the last week you have felt Determined"
+            },
+            "answers": [
+                {
+                    "code": 4,
+                    "value": "Quite a Bit"
+                }
+            ],
+            "asked_date_time": "2015-02-05T07:26:40Z",
+            "answered_date_time": "2015-02-05T07:26:45Z"
+        },
+        {
+            "question": {
+                "label": "17",
+                "text": "Indicate to what extent in the last week you have felt Attentive"
+            },
+            "answers": [
+                {
+                    "code": 3,
+                    "value": "Moderately"
+                }
+            ],
+            "asked_date_time": "2015-02-05T07:26:50Z",
+            "answered_date_time": "2015-02-05T07:26:55Z"
+        },
+        {
+            "question": {
+                "label": "18",
+                "text": "Indicate to what extent in the last week you have felt Jittery"
+            },
+            "answers": [
+                {
+                    "code": 2,
+                    "value": "A Little"
+                }
+            ],
+            "asked_date_time": "2015-02-05T07:27:00Z",
+            "answered_date_time": "2015-02-05T07:27:05Z"
+        },
+        {
+            "question": {
+                "label": "19",
+                "text": "Indicate to what extent in the last week you have felt Active"
+            },
+            "answers": [
+                {
+                    "code": 3,
+                    "value": "Moderately"
+                }
+            ],
+            "asked_date_time": "2015-02-05T07:27:10Z",
+            "answered_date_time": "2015-02-05T07:27:25Z"
+        },
+        {
+            "question": {
+                "label": "20",
+                "text": "Indicate to what extent in the last week you have felt Afraid"
+            },
+            "answers": [
+                {
+                    "code": 2,
+                    "value": "A Little"
+                }
+            ],
+            "asked_date_time": "2015-02-05T07:27:30Z",
+            "answered_date_time": "2015-02-05T07:27:35Z"
+        }
+    ],
+    "score": {
+        "positive_affect": 37,
+        "negative_affect": 23
+    }
+}
+
