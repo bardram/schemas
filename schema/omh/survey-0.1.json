@@ -33,7 +33,7 @@
                     "$ref": "#/definitions/date_time"
                 },
                 "end_status": {
-                    "description": "The way this survey was ended by the participant.",
+                    "description": "The way this survey was ended by the participant. Abandoned means some answers were provided. Missed means no answers were provided.",
                     "type": "string",
                     "enum": [
                         "abandoned",
