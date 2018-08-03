@@ -44,8 +44,15 @@
             }
         },
         "score": {
-            "description": "The score calculated for the survey.",
-            "type": "number"
+            "description": "The score calculated for the survey: this can be a number or a combination of numbers and/or string.",
+            "oneOf": [
+                {
+                    "type": "number"
+                },
+                {
+                    "type": "object"
+                }
+            ]
         }
     },
     "required": [

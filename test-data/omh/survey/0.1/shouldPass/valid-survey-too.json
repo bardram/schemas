@@ -38,6 +38,10 @@
         "start_date_time": "2015-02-05T07:24:00Z",
         "end_date_time": "2015-02-05T07:24:20Z",
         "end_status": "completed"
+    },
+    "score": {
+        "urge": 0,
+        "hour_blocks": 3
     }
 }
 
