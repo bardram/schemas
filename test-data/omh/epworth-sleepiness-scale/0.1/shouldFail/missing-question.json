@@ -1,0 +1,117 @@
+{
+    "items": [
+        {
+            "answers": [
+                {
+                    "code": 0,
+                    "value": "Would never doze"
+                }
+            ],
+            "asked_date_time": "2015-02-05T07:24:00Z",
+            "answered_date_time": "2015-02-05T07:24:05Z"
+        },
+        {
+            "question": {
+                "label": "2",
+                "text": "How likely are you to doze off or fall asleep in the following situation, in contrast to feeling just tired? Watching television"
+            },
+            "answers": [
+                {
+                    "code": 1,
+                    "value": "Slight chance of dozing"
+                }
+            ],
+            "asked_date_time": "2015-02-05T07:24:10Z",
+            "answered_date_time": "2015-02-05T07:24:15Z"
+        },
+        {
+            "question": {
+                "label": "3",
+                "text": "How likely are you to doze off or fall asleep in the following situation, in contrast to feeling just tired? Sitting inactive in a public place (e.g. a theater or meeting)"
+            },
+            "answers": [
+                {
+                    "code": 1,
+                    "value": "Slight chance of dozing"
+                }
+            ],
+            "asked_date_time": "2015-02-05T07:24:20Z",
+            "answered_date_time": "2015-02-05T07:24:25Z"
+        },
+        {
+            "question": {
+                "label": "4",
+                "text": "How likely are you to doze off or fall asleep in the following situation, in contrast to feeling just tired? As a passenger in a car for an hour without a break"
+            },
+            "answers": [
+                {
+                    "code": 2,
+                    "value": "Moderate chance of dozing"
+                }
+            ],
+            "asked_date_time": "2015-02-05T07:24:30Z",
+            "answered_date_time": "2015-02-05T07:24:35Z"
+        },
+        {
+            "question": {
+                "label": "5",
+                "text": "How likely are you to doze off or fall asleep in the following situation, in contrast to feeling just tired? Lying down to rest in the afternoon when circumstances permit"
+            },
+            "answers": [
+                {
+                    "code": 3,
+                    "value": "High chance of dozing"
+                }
+            ],
+            "asked_date_time": "2015-02-05T07:24:40Z",
+            "answered_date_time": "2015-02-05T07:24:45Z"
+        },
+        {
+            "question": {
+                "label": "6",
+                "text": "How likely are you to doze off or fall asleep in the following situation, in contrast to feeling just tired? Sitting and talking to someone"
+            },
+            "answers": [
+                {
+                    "code": 0,
+                    "value": "Would never doze"
+                }
+            ],
+            "asked_date_time": "2015-02-05T07:24:50Z",
+            "answered_date_time": "2015-02-05T07:24:55Z"
+        },
+        {
+            "question": {
+                "label": "7",
+                "text": "How likely are you to doze off or fall asleep in the following situation, in contrast to feeling just tired? Sitting quietly after a lunch without alcohol"
+            },
+            "answers": [
+                {
+                    "code": 0,
+                    "value": "Would never doze"
+                }
+            ],
+            "asked_date_time": "2015-02-05T07:25:00Z",
+            "answered_date_time": "2015-02-05T07:25:05Z"
+        },
+        {
+            "question": {
+                "label": "8",
+                "text": "How likely are you to doze off or fall asleep in the following situation, in contrast to feeling just tired? In a car, while stopped for a few minutes in the traffic"
+            },
+            "answers": [
+                {
+                    "code": 0,
+                    "value": "Would never doze"
+                }
+            ],
+            "asked_date_time": "2015-02-05T07:25:10Z",
+            "answered_date_time": "2015-02-05T07:25:15Z"
+        }
+    ],
+    "delivery_details": {
+        "start_date_time": "2015-02-05T07:24:00Z",
+        "answered_date_time": "2015-02-05T07:25:15Z",
+        "end_status": "completed"
+    }
+}

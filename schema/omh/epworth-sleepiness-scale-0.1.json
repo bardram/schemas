@@ -1,0 +1,256 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+
+    "description": "This schema models the Epworth Sleepiness Scale (ESS), 1997 version.",
+    "type": "object",
+
+    "references": [
+        {
+            "description": "The Epworth Sleepiness Scale (ESS), 1997 version",
+            "url": "https://epworthsleepinessscale.com/about-the-ess/"
+        },
+        {
+            "description": "The SNOMED code represents Epworth Sleepiness Scale (assessment scale)",
+            "url": "http://purl.bioontology.org/ontology/SNOMEDCT/708735004"
+        },
+        {
+            "description": "The SNOMED code represents Epworth Sleepiness Scale score (observable entity)",
+            "url": "http://purl.bioontology.org/ontology/SNOMEDCT/763254009"
+        }
+    ],
+
+    "definitions": {
+        "survey": {
+            "$ref": "survey-0.x.json"
+        },
+        "survey_item": {
+            "$ref": "survey-item-0.x.json"
+        },
+        "survey_categorical_answer": {
+            "$ref": "survey-categorical-answer-0.x.json"
+        },
+        "survey_categorical_answer_item": {
+            "description": "A survey item that has one categorical answer.",
+            "allOf": [
+                {
+                    "$ref": "#/definitions/survey_item"
+                },
+                {
+                    "type": "object",
+                    "properties": {
+                        "answers": {
+                            "type": "array",
+                            "items": {
+                                "$ref": "#/definitions/survey_categorical_answer"
+                            },
+                            "maxItems": 1
+                        }
+                    }
+                }
+            ]
+        },
+        "probability_scale_item": {
+            "description": "A categorical answer item where the answer is one of the four probability of dozing categories from ESS.",
+            "allOf": [
+                {
+                    "$ref": "#/definitions/survey_categorical_answer_item"
+                },
+                {
+                    "type": "object",
+                    "properties": {
+                        "answers": {
+                            "items": {
+                                "enum": [
+                                    {
+                                        "code": 0,
+                                        "value": "Would never doze"
+                                    },
+                                    {
+                                        "code": 1,
+                                        "value": "Slight chance of dozing"
+                                    },
+                                    {
+                                        "code": 2,
+                                        "value": "Moderate chance of dozing"
+                                    },
+                                    {
+                                        "code": 3,
+                                        "value": "High chance of dozing"
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                }
+            ]
+        }
+    },
+    "allOf": [
+        {
+            "$ref": "#/definitions/survey"
+        },
+        {
+            "properties": {
+                "items": {
+                    "type": "array",
+                    "minItems": 8,
+                    "items": [
+                        {
+                            "allOf": [
+                                {
+                                    "$ref": "#/definitions/probability_scale_item"
+                                },
+                                {
+                                    "properties": {
+                                        "question": {
+                                            "enum": [
+                                                {
+                                                    "label": "1",
+                                                    "text": "How likely are you to doze off or fall asleep in the following situation, in contrast to feeling just tired? Sitting and reading"
+                                                }
+                                            ]
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "allOf": [
+                                {
+                                    "$ref": "#/definitions/probability_scale_item"
+                                },
+                                {
+                                    "properties": {
+                                        "question": {
+                                            "enum": [
+                                                {
+                                                    "label": "2",
+                                                    "text": "How likely are you to doze off or fall asleep in the following situation, in contrast to feeling just tired? Watching television"
+                                                }
+                                            ]
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "allOf": [
+                                {
+                                    "$ref": "#/definitions/probability_scale_item"
+                                },
+                                {
+                                    "properties": {
+                                        "question": {
+                                            "enum": [
+                                                {
+                                                    "label": "3",
+                                                    "text": "How likely are you to doze off or fall asleep in the following situation, in contrast to feeling just tired? Sitting inactive in a public place (e.g. a theater or meeting)"
+                                                }
+                                            ]
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "allOf": [
+                                {
+                                    "$ref": "#/definitions/probability_scale_item"
+                                },
+                                {
+                                    "properties": {
+                                        "question": {
+                                            "enum": [
+                                                {
+                                                    "label": "4",
+                                                    "text": "How likely are you to doze off or fall asleep in the following situation, in contrast to feeling just tired? As a passenger in a car for an hour without a break"
+                                                }
+                                            ]
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "allOf": [
+                                {
+                                    "$ref": "#/definitions/probability_scale_item"
+                                },
+                                {
+                                    "properties": {
+                                        "question": {
+                                            "enum": [
+                                                {
+                                                    "label": "5",
+                                                    "text": "How likely are you to doze off or fall asleep in the following situation, in contrast to feeling just tired? Lying down to rest in the afternoon when circumstances permit"
+                                                }
+                                            ]
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "allOf": [
+                                {
+                                    "$ref": "#/definitions/probability_scale_item"
+                                },
+                                {
+                                    "properties": {
+                                        "question": {
+                                            "enum": [
+                                                {
+                                                    "label": "6",
+                                                    "text": "How likely are you to doze off or fall asleep in the following situation, in contrast to feeling just tired? Sitting and talking to someone"
+                                                }
+                                            ]
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "allOf": [
+                                {
+                                    "$ref": "#/definitions/probability_scale_item"
+                                },
+                                {
+                                    "properties": {
+                                        "question": {
+                                            "enum": [
+                                                {
+                                                    "label": "7",
+                                                    "text": "How likely are you to doze off or fall asleep in the following situation, in contrast to feeling just tired? Sitting quietly after a lunch without alcohol"
+                                                }
+                                            ]
+                                        }
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "allOf": [
+                                {
+                                    "$ref": "#/definitions/probability_scale_item"
+                                },
+                                {
+                                    "properties": {
+                                        "question": {
+                                            "enum": [
+                                                {
+                                                    "label": "8",
+                                                    "text": "How likely are you to doze off or fall asleep in the following situation, in contrast to feeling just tired? In a car, while stopped for a few minutes in the traffic"
+                                                }
+                                            ]
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    ],
+                    "additionalItems": false
+                }
+            }
+        }
+    ]
+}
