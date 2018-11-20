@@ -41,8 +41,8 @@
                 }
             ]
         },
-        "frequency_scale_item": {
-            "description": "A categorical answer item where the answer is one of the four frequency categories from PHQ-9.",
+        "difficulty_scale_item": {
+            "description": "A categorical answer item where the answer is one of the five difficulty categories from the Neuro-QoL Lower Extremity Function (Mobility) – Short Form.",
             "allOf": [
                 {
                     "$ref": "#/definitions/survey_categorical_answer_item"
@@ -94,7 +94,7 @@
                         {
                             "allOf": [
                                 {
-                                    "$ref": "#/definitions/frequency_scale_item"
+                                    "$ref": "#/definitions/difficulty_scale_item"
                                 },
                                 {
                                     "properties": {
@@ -113,7 +113,7 @@
                         {
                             "allOf": [
                                 {
-                                    "$ref": "#/definitions/frequency_scale_item"
+                                    "$ref": "#/definitions/difficulty_scale_item"
                                 },
                                 {
                                     "properties": {
@@ -132,7 +132,7 @@
                         {
                             "allOf": [
                                 {
-                                    "$ref": "#/definitions/frequency_scale_item"
+                                    "$ref": "#/definitions/difficulty_scale_item"
                                 },
                                 {
                                     "properties": {
@@ -151,7 +151,7 @@
                         {
                             "allOf": [
                                 {
-                                    "$ref": "#/definitions/frequency_scale_item"
+                                    "$ref": "#/definitions/difficulty_scale_item"
                                 },
                                 {
                                     "properties": {
@@ -170,7 +170,7 @@
                         {
                             "allOf": [
                                 {
-                                    "$ref": "#/definitions/frequency_scale_item"
+                                    "$ref": "#/definitions/difficulty_scale_item"
                                 },
                                 {
                                     "properties": {
@@ -189,7 +189,7 @@
                         {
                             "allOf": [
                                 {
-                                    "$ref": "#/definitions/frequency_scale_item"
+                                    "$ref": "#/definitions/difficulty_scale_item"
                                 },
                                 {
                                     "properties": {
@@ -208,7 +208,7 @@
                         {
                             "allOf": [
                                 {
-                                    "$ref": "#/definitions/frequency_scale_item"
+                                    "$ref": "#/definitions/difficulty_scale_item"
                                 },
                                 {
                                     "properties": {
@@ -227,7 +227,7 @@
                         {
                             "allOf": [
                                 {
-                                    "$ref": "#/definitions/frequency_scale_item"
+                                    "$ref": "#/definitions/difficulty_scale_item"
                                 },
                                 {
                                     "properties": {

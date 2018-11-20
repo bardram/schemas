@@ -42,7 +42,7 @@
             ]
         },
         "frequency_scale_item": {
-            "description": "A categorical answer item where the answer is one of the four frequency categories from PHQ-9.",
+            "description": "A categorical answer item where the answer is one of the six frequency categories from WHO-5.",
             "allOf": [
                 {
                     "$ref": "#/definitions/survey_categorical_answer_item"
