@@ -3,7 +3,7 @@
         {
             "question": {
                 "label": "1",
-                "text": "How likely are you to doze off or fall asleep in the following situation, in contrast to feeling just tired? Sitting and reading"
+                "text": "This refers to your usual way of life in recent times. How likely are you to doze off or fall asleep in the following situation, in contrast to feeling just tired? Sitting and reading"
             },
             "answers": [
                 {
@@ -17,7 +17,7 @@
         {
             "question": {
                 "label": "2",
-                "text": "How likely are you to doze off or fall asleep in the following situation, in contrast to feeling just tired? Watching television"
+                "text": "This refers to your usual way of life in recent times. How likely are you to doze off or fall asleep in the following situation, in contrast to feeling just tired? Watching television"
             },
             "answers": [],
             "asked_date_time": "2015-02-05T07:24:10Z"
@@ -25,42 +25,42 @@
         {
             "question": {
                 "label": "3",
-                "text": "How likely are you to doze off or fall asleep in the following situation, in contrast to feeling just tired? Sitting inactive in a public place (e.g. a theater or meeting)"
+                "text": "This refers to your usual way of life in recent times. How likely are you to doze off or fall asleep in the following situation, in contrast to feeling just tired? Sitting inactive in a public place (e.g. a theater or meeting)"
             },
             "answers": []
         },
         {
             "question": {
                 "label": "4",
-                "text": "How likely are you to doze off or fall asleep in the following situation, in contrast to feeling just tired? As a passenger in a car for an hour without a break"
+                "text": "This refers to your usual way of life in recent times. How likely are you to doze off or fall asleep in the following situation, in contrast to feeling just tired? As a passenger in a car for an hour without a break"
             },
             "answers": []
         },
         {
             "question": {
                 "label": "5",
-                "text": "How likely are you to doze off or fall asleep in the following situation, in contrast to feeling just tired? Lying down to rest in the afternoon when circumstances permit"
+                "text": "This refers to your usual way of life in recent times. How likely are you to doze off or fall asleep in the following situation, in contrast to feeling just tired? Lying down to rest in the afternoon when circumstances permit"
             },
             "answers": []
         },
         {
             "question": {
                 "label": "6",
-                "text": "How likely are you to doze off or fall asleep in the following situation, in contrast to feeling just tired? Sitting and talking to someone"
+                "text": "This refers to your usual way of life in recent times. How likely are you to doze off or fall asleep in the following situation, in contrast to feeling just tired? Sitting and talking to someone"
             },
             "answers": []
         },
         {
             "question": {
                 "label": "7",
-                "text": "How likely are you to doze off or fall asleep in the following situation, in contrast to feeling just tired? Sitting quietly after a lunch without alcohol"
+                "text": "This refers to your usual way of life in recent times. How likely are you to doze off or fall asleep in the following situation, in contrast to feeling just tired? Sitting quietly after a lunch without alcohol"
             },
             "answers": []
         },
         {
             "question": {
                 "label": "8",
-                "text": "How likely are you to doze off or fall asleep in the following situation, in contrast to feeling just tired? In a car, while stopped for a few minutes in the traffic"
+                "text": "This refers to your usual way of life in recent times. How likely are you to doze off or fall asleep in the following situation, in contrast to feeling just tired? In a car, while stopped for a few minutes in the traffic"
             },
             "answers": []
         }
